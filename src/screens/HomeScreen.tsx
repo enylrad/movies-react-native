@@ -28,7 +28,7 @@ export const HomeScreen = () => {
 
                 {/* Movies in Cinema */}
                 <Carousel
-                    data={nowPlaying!}
+                    data={nowPlaying}
                     renderItem={({ item }) => <MoviePoster movie={item} />}
                     sliderWidth={windowWidth}
                     itemWidth={300}
@@ -36,9 +36,9 @@ export const HomeScreen = () => {
                 />
 
                 {/* Popular Movies */}
-                <HorizontalSlider title="Populares" movies={popular!} />
-                <HorizontalSlider title="Mejor puntuadas" movies={topRated!} />
-                <HorizontalSlider title="Próximamente" movies={upcoming!} />
+                <HorizontalSlider title="Populares" movies={popular} />
+                <HorizontalSlider title="Mejor puntuadas" movies={topRated} />
+                <HorizontalSlider title="Próximamente" movies={upcoming} />
             </View>
         </ScrollView>
     )
