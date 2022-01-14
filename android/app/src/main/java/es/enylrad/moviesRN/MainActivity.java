@@ -1,4 +1,4 @@
-package com.movies;
+package es.enylrad.moviesrn;
 
 import com.facebook.react.ReactActivity;
 import android.os.Bundle;
